@@ -27,8 +27,7 @@ Compose an uplink to remote Network Server using Packet Forwarder protocol.
 const buildJson = require('packet-forwarder-json-builder')
 
 const payload = Buffer.from('test')
-const before = Date.now()
-const message = buildJson(payload, {
+const scenario = {
   gateway: {},
   device: {
     seqno: 1,
@@ -36,8 +35,8 @@ const message = buildJson(payload, {
     appSKey: 'db1ce62ae4a266a6aad58da0a6ef413b',
     nwkSKey: '33d356771bc0840d2ebf37e9585c800c'
   }
-})
-console.log(message)
+}
+console.log(buildJson(payload, scenario))
 // {
 //   rxpk: [{
 //     time: '2018-05-14T21:00:06.324Z',
