@@ -18,14 +18,15 @@ describe('Packet forwarder build JSON rxpk message', () => {
       }
     })
     const after = Date.now()
-    const time = (new Date(message.rxpk[0].time)).getTime()
+    const [ rxpk ] = message.rxpk
+    const time = (new Date(rxpk.time)).getTime()
     expect(time).to.be.least(before)
     expect(time).to.be.most(after)
-    const tmst = (new Date(message.rxpk[0].tmst * SECOND)).getTime()
+    const tmst = (new Date(rxpk.tmst * SECOND)).getTime()
     expect(tmst).to.be.least(before - SECOND)
     expect(tmst).to.be.most(after + SECOND)
-    delete message.rxpk[0].time
-    delete message.rxpk[0].tmst
+    delete rxpk.time
+    delete rxpk.tmst
     expect(message).to.eql({
       rxpk: [{
         chan: null,
