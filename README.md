@@ -22,11 +22,16 @@ npm intall --save packet-forwarder-json-builder
 
 ## Usage
 
-Compose an uplink to remote Network Server using Packet Forwarder protocol.
+Compose messages to remote Network Server using Packet Forwarder protocol.
+
+Supported messages:
+
+- Uplink
+- Join-request
 
 
 ```javascript
-const buildJson = require('packet-forwarder-json-builder')
+const jsonBuilder = require('packet-forwarder-json-builder')
 
 const payload = Buffer.from('test')
 const scenario = {
@@ -38,7 +43,7 @@ const scenario = {
     nwkSKey: '33d356771bc0840d2ebf37e9585c800c'
   }
 }
-console.log(buildJson(payload, scenario))
+console.log(jsonBuilder.uplink(payload, scenario))
 // {
 //   rxpk: [{
 //     time: '2018-05-14T21:00:06.324Z',
