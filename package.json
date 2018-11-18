@@ -1,6 +1,6 @@
 {
   "name": "packet-forwarder-json-builder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Build JSON packet forwarder message for an uplink (rxpk)",
   "main": "lib/index.js",
   "scripts": {
