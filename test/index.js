@@ -8,7 +8,7 @@ describe('Packet forwarder build JSON rxpk message', () => {
   it('should compose valid message', () => {
     const payload = Buffer.from('test')
     const before = Date.now()
-    const message = buildJson(payload, {
+    const message = buildJson.uplink(payload, {
       gateway: {},
       device: {
         seqno: 1,
