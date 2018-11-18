@@ -1,6 +1,6 @@
 {
   "name": "packet-forwarder-json-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Build JSON packet forwarder message for an uplink (rxpk)",
   "main": "lib/index.js",
   "scripts": {
@@ -23,8 +23,8 @@
     "node": ">=8.9.4"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/antoniobusrod/packet-forwarder-json-builder.git"
+    "type": "git",
+    "url": "https://github.com/antoniobusrod/packet-forwarder-json-builder.git"
   },
   "devDependencies": {
     "chai": "4.1.2",
