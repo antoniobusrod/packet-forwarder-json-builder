@@ -5,7 +5,7 @@ const buildJson = require('../lib/index')
 const SECOND = 1000
 
 describe('Packet forwarder build JSON rxpk message', () => {
-  it('should compose valid message', () => {
+  it('should compose uplink packet forwarder message', () => {
     const payload = Buffer.from('test')
     const before = Date.now()
     const message = buildJson.uplink(payload, {
