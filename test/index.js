@@ -2,6 +2,8 @@
 const { expect } = require('chai')
 const buildJson = require('../lib/index')
 
+const SECOND = 1000
+
 describe('Packet forwarder build JSON rxpk message', () => {
   it('should compose valid message', () => {
     const payload = Buffer.from('test')
@@ -17,11 +19,11 @@ describe('Packet forwarder build JSON rxpk message', () => {
     })
     const after = Date.now()
     const time = (new Date(message.rxpk[0].time)).getTime()
-    expect(time).to.be.above(before)
-    expect(time).to.be.least(after)
-    const tmst = (new Date(message.rxpk[0].tmst * 1000)).getTime()
-    expect(tmst).to.be.above(Math.floor(before / 1000))
-    expect(tmst).to.be.least(Math.floor(after / 1000))
+    expect(time).to.be.least(before)
+    expect(time).to.be.most(after)
+    const tmst = (new Date(message.rxpk[0].tmst * SECOND)).getTime()
+    expect(tmst).to.be.least(before - SECOND)
+    expect(tmst).to.be.most(after + SECOND)
     delete message.rxpk[0].time
     delete message.rxpk[0].tmst
     expect(message).to.eql({
