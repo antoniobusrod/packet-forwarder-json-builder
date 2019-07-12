@@ -18,7 +18,7 @@ describe('Packet forwarder build JSON rxpk message', () => {
       }
     })
     const after = Date.now()
-    const [ rxpk ] = message.rxpk
+    const [rxpk] = message.rxpk
     const time = (new Date(rxpk.time)).getTime()
     expect(time).to.be.least(before)
     expect(time).to.be.most(after)
@@ -58,7 +58,7 @@ describe('Packet forwarder build JSON rxpk message', () => {
       }
     })
     const after = Date.now()
-    const [ rxpk ] = message.rxpk
+    const [rxpk] = message.rxpk
     const time = (new Date(rxpk.time)).getTime()
     expect(time).to.be.least(before)
     expect(time).to.be.most(after)
