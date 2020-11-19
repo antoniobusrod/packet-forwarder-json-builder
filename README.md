@@ -17,7 +17,7 @@ In LoRaWAN, you will need real gateways and real devices for your real test case
 ### Installation
 
 ```sh
-npm intall --save packet-forwarder-json-builder
+npm install --save packet-forwarder-json-builder
 ```
 
 ## Usage
