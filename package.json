@@ -20,7 +20,7 @@
     "author": "Antonio Bustos <antoniobusrod@gmail.com>",
     "license": "MIT",
     "engines": {
-        "node": ">=12.22.1"
+        "node": ">=14.18.3"
     },
     "repository": {
         "type": "git",
