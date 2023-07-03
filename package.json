@@ -30,9 +30,9 @@
         "chai": "4.3.7",
         "mocha": "10.2.0",
         "mock-udp": "0.1.1",
-        "standard": "^16.0.3"
+        "standard": "^17.1.0"
     },
     "dependencies": {
-        "lora-packet": "0.8.18"
+        "lora-packet": "0.8.19"
     }
 }
