@@ -33,6 +33,6 @@
         "standard": "^17.1.0"
     },
     "dependencies": {
-        "lora-packet": "0.8.19"
+        "lora-packet": "^0.8.25"
     }
 }
