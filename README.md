@@ -3,17 +3,17 @@
 [![CI](https://github.com/antoniobusrod/packet-forwarder-json-builder/actions/workflows/ci.yml/badge.svg)](https://github.com/antoniobusrod/packet-forwarder-json-builder/actions/workflows/ci.yml)
 [![npm version](https://badge.fury.io/js/packet-forwarder-json-builder.svg)](https://badge.fury.io/js/packet-forwarder-json-builder)
 
-Build JSON packet forwarder message for an uplink (rxpk) which will be sent Virtual LoRa packet forwarder.
+Build JSON packet forwarder messages (rxpk) for uplink and join-request, to be sent via a virtual LoRa packet forwarder.
 
 ## Getting Started
 
-In LoRaWAN, you will need real gateways and real devices for your real test case. However, it's simpler to using just simulated gateway and simulated devices in order to choose best LoRaWAN Network Server fulfills your real requirements.
+In LoRaWAN, you typically need real gateways and devices for testing. This module lets you use simulated gateways and devices instead, making it easier to evaluate LoRaWAN Network Servers without hardware.
 
-[`lora-packet`](https://github.com/anthonykirby/lora-packet) is a nice module to generate LoRaWAN uplink/downlink payloads, but in order to send them to a Network Server, Semtech UDP Packet Forwarder protocol is required.
+[`lora-packet`](https://github.com/anthonykirby/lora-packet) generates LoRaWAN uplink/downlink payloads. This module wraps them in the Semtech UDP Packet Forwarder protocol so they can be sent to a Network Server.
 
 ### Prerequisites
 
-- Node.js v8.x
+- Node.js >= 18 (tested on 18, 20 and 22)
 
 ### Installation
 
@@ -70,13 +70,9 @@ console.log(jsonBuilder.uplink(payload, scenario))
 
 Clone repository, install dependencies and run tests `npm test`.
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Contributing
 
-Respect `standard` rules.
+Follow [`standard`](https://standardjs.com/) style. Run `npm test` before submitting changes.
 
 ## Versioning
 
