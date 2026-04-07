@@ -1,6 +1,6 @@
 # Packet Forwarder JSON builder (Node.js)
 
-[![Build Status](https://travis-ci.org/antoniobusrod/packet-forwarder-json-builder.svg?branch=master)](https://travis-ci.org/antoniobusrod/packet-forwarder-json-builder)
+[![CI](https://github.com/antoniobusrod/packet-forwarder-json-builder/actions/workflows/ci.yml/badge.svg)](https://github.com/antoniobusrod/packet-forwarder-json-builder/actions/workflows/ci.yml)
 [![npm version](https://badge.fury.io/js/packet-forwarder-json-builder.svg)](https://badge.fury.io/js/packet-forwarder-json-builder)
 
 Build JSON packet forwarder message for an uplink (rxpk) which will be sent Virtual LoRa packet forwarder.
