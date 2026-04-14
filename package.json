@@ -34,5 +34,8 @@
     },
     "dependencies": {
         "lora-packet": "^0.8.25"
+    },
+    "overrides": {
+        "serialize-javascript": "^7.0.3"
     }
 }
