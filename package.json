@@ -1,6 +1,6 @@
 {
     "name": "packet-forwarder-json-builder",
-    "version": "2.0.24",
+    "version": "2.0.25",
     "description": "Build JSON packet forwarder messages (rxpk) for uplink and join-request",
     "main": "lib/index.js",
     "scripts": {
@@ -36,6 +36,6 @@
         "lora-packet": "^0.8.25"
     },
     "overrides": {
-        "serialize-javascript": "^7.0.3"
+        "serialize-javascript": "^7.0.5"
     }
 }
