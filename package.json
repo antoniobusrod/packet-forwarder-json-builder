@@ -36,6 +36,8 @@
         "lora-packet": "^0.8.25"
     },
     "overrides": {
-        "serialize-javascript": "^7.0.5"
+        "serialize-javascript": "^7.0.5",
+        "js-yaml": "^4.2.0",
+        "diff": "^8.0.3"
     }
 }
